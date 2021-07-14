@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Devinette</title>
+	<meta charset="utf-8">	
+</head>
+</html>
+
+    <script type="text/javascript">
+    	/*Consigne ->
+    	*faire le mm tp mais sans limiter le nombre de tentative 
+    	*sans randon:Math.flooor*/
+
+        alert("Bonjour \n Bienvenue");
+
+        for(var nb_essai=0;nb_essai<3;nb_essai++)	{
+    	const resultat = 37
+    	let nombre = Number (prompt("Veuiller deviner le nombre compris entre 1 et 100"))
+    	if(nombre>resultat) {
+          alert("c'est faux wagnil");
+    	}
+    	else if(nombre<resultat) {
+    		alert("C'est faux yokal");
+    	}
+    	else if(nombre===resultat) {
+    		alert("Bravo do nitt");
+    		break;
+    	}
+
+    	if( nb_essai===2){
+    		alert("PERDU");
+    	}
+    }
+	</script>
